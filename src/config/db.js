@@ -8,6 +8,7 @@ const sequelize = new Sequelize(
     {
         host: process.env.DB_HOST,
         dialect: "mysql",
+        port: 3306,
         dialectOptions: {
             charset: "utf8"  // ✅ Dùng utf8 thay vì utf8mb4
         },
